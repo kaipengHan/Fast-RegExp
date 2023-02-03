@@ -38,3 +38,12 @@ const regexpIdCard =
 
 // emoji
 const regexpEmoji = /[\ud800-\udbff][\udc00-\udfff]/;
+
+// 纬度
+const regexpLat = /^(\-|\+)?([0-8]?\d{1}\.\d{0,6}|90\.0{0,6}|[0-8]?\d{1}|90)$/;
+// 经度
+const regexpLon =
+	/^(\-|\+)?(((\d|[1-9]\d|1[0-7]\d|0{1,3})\.\d{0,6})|(\d|[1-9]\d|1[0-7]\d|0{1,3})|180\.0{0,6}|180)$/;
+
+// url
+const regexpUrl = /(http|https):\/\/([\w.]+\/?)\S*/;
